@@ -1,0 +1,121 @@
+@import "vars"
+@import "libs"
+@import "components"
+
+::placeholder
+	color: $crAccent
+	opacity: .65
+
+::selection
+	background-color: $crMain
+	color: $crWhite
+
+*
+	padding: 0
+	margin: 0
+	box-sizing: border-box
+
+html, body
+	height: auto
+	overflow-x: hidden
+
+body
+	font-size: 18px
+	position: relative
+	margin: 0
+	min-width: 320px
+	line-height: 1.65
+	font-family: $ftRegular
+	color: $crAccent
+	background-color: $crBgLight
+
+h1, h2, h3
+	margin: 0
+	padding: 0
+	font-family: $ftBold
+
+a
+	color: $crAccent
+	text-decoration: none
+
+a:visited, a:active
+	color: $crAccent
+
+ul, ol
+	margin: 0
+	padding: 0
+	list-style-type: none
+	li
+		list-style-type: none
+
+button, input, textarea, select
+	outline: none
+	border: none
+	border-width: 4px
+	&:focus:required
+		border-color: $crGrey
+		outline-color: $crGrey
+	&:focus:required:invalid
+		border-color: $crGrey
+		outline-color: $crGrey
+	&:required:valid
+		border-color: $crBgLight
+
+button
+	cursor: pointer
+	color: $crAccent
+	&::-moz-focus-inner
+		border: 0
+
+.st-slider-container
+	height: 100%
+	width: 100%
+	top: 0
+	left: 0
+	overflow: hidden
+
+.st-prev, .st-next
+	position: absolute
+	top: 50%
+	width: auto
+	cursor: pointer
+	margin-top: -22px
+	padding: 16px
+	color: $crGrey
+	font-weight: 100
+	font-size: 2em
+	transition: all .4s ease
+	background-color: transparent
+	z-index: 7
+	a
+		transition: all .4s ease
+		color: $crGrey
+
+.st-prev:hover, 
+.st-next:hover
+	color: $crMain
+	a
+		color: $crMain
+
+.st-next 
+	right: 0
+
+.st-slider
+	position: relative
+	height: 100%
+
+.st-slide
+	visibility: hidden
+	opacity: 0
+	z-index: -1
+	position: absolute
+	transition: all .6s ease
+	height: 100%
+	width: 100%
+
+.st-slide.current-slide
+	opacity: 1
+	visibility: visible
+	z-index: 2
+
+@import "media"

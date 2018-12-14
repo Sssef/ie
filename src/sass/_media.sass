@@ -1,0 +1,299 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+@media only screen and (max-width : 1440px)
+    .st-section
+        height: auto
+    .st-container
+        max-width: 1180px
+    .st-bg-img
+        max-width: 700px
+    .st-company, .st-partner, .st-layer
+        display: block
+    .st-company
+        img
+            max-width: none
+    .st-layer
+        height: 100%
+    #callbackBtn
+        left: 0
+    .st-contacts
+        position: relative
+        left: 0
+        margin-left: 100px
+        margin-bottom: 80px
+    .st-contacts__item--icon
+        left: -80px
+        width: 60px
+        height: 60px
+    /**/
+        
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+    .st-container
+        max-width: 980px
+    .st-header
+        .st-logo
+            left: 0
+            width: 80px
+        .st-nav
+            display: none
+    .st-phone
+        font-size: 2rem
+    .st-main-title 
+        .st-main-title__header
+            font-size: 4rem
+        .st-main-title__footer
+            font-size: 2rem
+    .st-logo.st-menu-logo
+        width: 6rem
+        top: 40px
+    .st-header
+        .st-header__row
+            flex-wrap: nowrap
+    .hamburger
+        z-index: 211
+        opacity: 1
+        visibility: visible
+    .st-bg-img
+        max-width: 600px
+        &#wheatAdvantages
+            right: -28%
+            top: 0
+            z-index: 1
+    .st-list
+        position: relative
+        z-index: 10
+    .st-mobile-nav__item
+        font-size: 1.5rem        
+    .st-nav__item
+        font-size: .9rem
+    .st-row
+        flex-wrap: wrap
+    .st-col
+        width: 100%
+    .st-contacts
+        position: relative
+        padding: 0
+        top: 100px
+        transform: none
+    #partnersSlider
+        margin: 120px 0 60px
+    .st-contacts
+        top: 0
+        margin-bottom: 0
+        margin-top: 80px
+    #sCallback
+        .st-callback
+            flex-direction: column
+            width: 100%
+            max-width: 600px
+            align-self: center
+        #callback-phone
+            margin-bottom: 28px
+    .st-footer
+        .st-nav__list
+            display: flex
+            flex-direction: column
+            align-items: center
+        .st-nav__item
+            display: flex
+            flex-direction: column
+            &:not(:last-child)
+                margin-bottom: 20px
+    .st-btn
+        max-width: 600px
+        margin-right: auto
+        margin-left: auto
+    #sScheme
+        max-height: 480px
+        .ymaps-2-1-69-map
+            max-height: 480px
+    /**/
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+    .st-container
+        max-width: 748px   
+    .st-bg-img
+        max-width: 500px
+    .st-logo.st-menu-logo
+        width: 5rem
+        top: 40px
+    .st-main-title 
+        .st-main-title__header
+            font-size: 3rem
+        .st-main-title__footer
+            font-size: 1.5rem
+    .st-modal
+        padding-top: 140px
+        .st-close
+            top: 3%
+    .st-title,
+    .st-title__text
+        font-size: 2.5rem
+        &:after,
+        &:before
+            display: none
+    .st-nav__item
+        font-size: .8rem
+    .st-mobile-nav__item
+        font-size: 1.2rem
+    #partnersSlider
+        margin: 100px 0 40px
+    .st-contacts__item--icon
+        left: -80px
+        width: 60px
+        height: 60px
+    .st-company
+        .st-list
+            margin-top: 20px
+    .st-bg-img
+        &#wheatAdvantages
+            right: -55%
+    /**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+    .st-main-title
+        .st-main-title__header
+            font-size: 2.3rem      
+    .st-container
+        max-width: 460px
+    .st-phone
+        margin-right: 20px
+        font-size: 1.9rem
+    .st-bg-img
+        max-width: 400px
+    .st-title__text
+        font-size: 2rem
+    .st-mobile-nav__item
+        font-size: 1rem
+    .st-bg-img
+        &#wheatAdvantages
+            right: -80%
+    #partnersSlider
+        margin: 80px 0 20px
+    .st-company
+        img
+            left: 0
+        .imgDt
+            display: none
+        .imgMob
+            display: flex
+    .st-header
+        .st-logo
+            left: 65px
+            top: 30px
+            position: absolute
+    .st-company
+        .st-list
+            margin-top: 0
+    .st-main-title
+        margin-top: 15%
+    #sScheme
+        max-height: 320px
+        .ymaps-2-1-69-map
+            max-height: 320px
+
+    /**/
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+    .st-header
+        padding: 10px 0
+        .st-logo
+            left: 25px
+            top: 20px
+            width: 60px
+    .st-logo.st-menu-logo
+        width: 55px
+    .st-phone
+        margin-right: 20px
+        margin-top: 10px
+        font-size: 1.25rem
+    .hamburger
+        top: 60px
+    .st-content
+        margin: 45px 0
+    .st-content__text,
+    .st-list,
+    .st-content__text-list
+        font-size: 1em
+    .st-list
+        padding: 15px
+        &#advantages
+            padding-left: 37px
+    .st-list__item
+        &:before
+            width: 16px
+            height: 16px
+            left: -35px
+    .st-container
+        max-width: 320px
+    .st-main-title
+        margin-top: 22%
+        .st-main-title__header
+            font-size: 2rem
+        .st-main-title__footer
+            font-size: 1.4rem
+    .st-bg-img
+        max-width: 400px
+        &#wheatAdvantages
+            right: -100%
+            top: 20%
+    #partnersSlider
+        margin: 60px 0 15px
+    .st-contacts
+        position: relative
+        margin-left: 60px
+        margin-top: 60px
+        font-size: 1rem
+    .st-contacts__item--icon
+        left: -55px
+        width: 40px
+        height: 40px
+    #sCallback
+        padding: 60px 0 10px
+
+    /**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+    .st-phone
+        font-size: 1.1rem
+    .st-container
+        max-width: 310px
+    .st-bg-img
+        &#wheatAdvantages
+            right: -88%
+    /**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/

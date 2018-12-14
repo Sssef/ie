@@ -1,0 +1,523 @@
+@import "vars"
+
+.hidden
+    visibility: hidden !important
+    opacity: 0 !important
+    z-index: -5 !important
+    position: absolute !important
+    transition: all .4s ease
+
+.st-header,
+.st-footer
+    display: flex
+    padding: 40px 100px
+    width: 100%
+    z-index: 2
+
+.st-header
+    position: absolute
+    z-index: 25
+    .st-logo
+        left: 150px 
+
+.st-header__row
+    justify-content: space-between
+
+.st-footer
+    position: relative
+    bottom: 0
+    background-color: $crMain
+    text-align: center
+    padding: 40px 0 120px
+    .st-nav
+        margin-bottom: 66px
+        text-align: center
+    .st-nav__item
+        font-size: 1.1rem
+    .st-logo
+        width: 5.4rem
+        margin: 0 auto
+    .st-input
+        margin-right: 12px
+
+.st-footer__row
+    margin-top: 80px
+    justify-content: center
+
+.st-section
+    display: flex
+    position: relative
+    height: 100vh
+    width: 100%
+    padding: 88px 0
+        
+.st-row,
+.st-col
+    display: flex
+
+.st-row
+    width: 100%    
+
+.st-col
+    flex-direction: column
+
+.st-container
+    max-width: 1440px
+    width: 100%
+    margin: 0 auto
+
+.st-btn
+    font-family: $ftBold
+    padding: 18px 40px
+    font-size: 1em
+    transition: all .3s ease-in-out
+    z-index: 5
+    position: relative
+    min-width: 280px
+    max-width: 300px
+
+.st-btn-main
+    background-color: $crMain
+    &:hover
+        background-color: lighten($crMain, 3%)
+        box-shadow: 0 0 8px 3px rgba(255, 208, 104, .5)
+
+#sMain
+    justify-content: center
+    .st-bg-img
+        left: 0
+
+#callbackBtn
+    left: 70%
+    top: 70%
+    z-index: 30
+
+#seePhotos
+    position: absolute
+    bottom: 80px
+    display: inline-block
+    z-index: 40
+    left: 50%
+    transform: translateX(-50%)
+
+.st-btn-accent
+    background-color: $crAccent
+    color: $crGrey
+    margin: 0 auto
+    &:hover
+        color: $crBgLight
+        background-color: lighten($crAccent, 3%)
+        box-shadow: 0 0 5px 2px rgba(87, 84, 84, .5)
+
+.st-input
+    background: transparent
+    border-width: 5px
+    border-style: solid
+    font-family: $ftBold
+    font-size: 1em
+    padding: 18px 40px
+    height: 57px
+    width: 100%
+    transition: all .3s ease-in-out
+
+.st-input-accent
+    color: $crAccent
+    border-color: $crAccent
+    &:hover
+        border-color: lighten($crAccent, 10%)
+        box-shadow: 0 0 5px 2px rgba(87, 84, 84, .5)
+
+.st-menu
+    width: 100vw
+    height: 100vh
+    position: fixed
+    top: 0
+    left: 0
+    z-index: -2
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $crMain
+    visibility: hidden
+    opacity: 0
+    transition: all .4s ease
+
+.st-menu.active
+    opacity: 1
+    visibility: visible
+    z-index: 200
+
+.st-mobile-nav__list
+    text-align: center
+    align-items: center
+    display: flex
+    flex-direction: column
+
+.st-mobile-nav__item
+    &:not(:last-child)
+        margin-bottom: 4vh
+
+.st-logo.st-menu-logo
+    position: absolute
+    left: 10%
+    top: 10%
+
+.hamburger
+    z-index: -1
+    opacity: 0
+    visibility: hidden
+    position: fixed
+    right: 20px
+    top: 40px
+
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+    background-color: lighten($crAccent, 15%)
+    
+.st-phone,
+.st-nav
+    text-align: right
+    letter-spacing: 1
+
+.st-phone
+    font-size: 2.125vw
+    font-family: $ftBold
+    margin-bottom: 10px
+
+.st-nav
+    font-family: $ftBold
+
+.st-nav__item,
+.st-mobile-nav__item
+    padding: 12px 20px
+    border: 4px solid transparent
+    transition: border-color .4s ease-in-out
+    font-size: 1vw
+    &:hover
+        border-color: $crAccent
+
+.st-nav__item
+    display: inline-block
+    &:not(:last-child)
+        margin-right: 10px
+   
+.st-logo
+    width: 5.25vw
+    position: relative
+
+.st-main-title
+    max-width: 1024px
+    text-align: center
+    position: relative
+    margin-top: 11%
+    .st-main-title__header
+        font-size: 4.5vw
+        text-align: center
+        position: relative
+        margin-bottom: 20px
+        &:after
+            content: ""
+            height: 5px
+            background-color: $crMain
+            width: 40%
+            position: absolute
+            top: 102%
+            left: 50%
+            transform: translateX(-50%)
+    .st-main-title__footer
+        font-family: $ftBlack
+        font-size: 2.75vw
+
+.st-title
+    font-family: $ftBold
+    font-size: 3.5vw
+    text-align: center
+    justify-content: center
+    margin: 0 auto
+    .st-title__text
+        position: relative
+        z-index: 4
+        &:after,
+        &:before
+            content: ""
+            height: 5px
+            width: 20%
+            position: absolute
+            top: 60%
+            z-index: 2
+        &:after
+            left: 0
+        &:before
+            right: 0
+
+.st-title-accent
+    color: $crAccent
+    .st-title__text
+        &:after,
+        &:before
+            background-color: $crAccent
+
+#sAdvantages
+    &:before
+        content: ''
+        width: 0
+        height: 0
+        bottom: 0
+        left: 0
+        position: absolute
+        border-style: solid
+        border-width: 0 1400px 700px 1400px
+        border-color: transparent transparent $crWhite transparent
+    .st-title-accent
+        .st-title__text
+            &:before
+                opacity: 0
+
+.st-title-white
+    color: $crWhite
+    .st-title__text
+        &:after,
+        &:before
+            background-color: $crWhite
+
+.st-centered
+    text-align: center
+    justify-content: center
+    align-self: center
+    vertical-align: middle
+
+.st-content
+    margin: 60px 0
+    z-index: 3
+    position: relative
+
+.st-bg-img
+    position: absolute
+    z-index: -1
+    max-width: 900px
+    width: 100%
+    height: auto
+    &#wheatAdvantages
+        top: -80%
+        z-index: 3
+    &#wheatContacts
+        max-width: 100%
+        z-index: 1
+        right: 0
+        bottom: -10%
+
+.st-list
+    font-size: 1.125em
+    max-width: 900px
+    width: 100%
+    padding: 50px
+
+.st-list__item
+    position: relative
+    &:before
+        content: ''
+        width: 21px
+        height: 21px
+        border-radius: 50%
+        border: 2px solid darken($crMain, 25%)
+        background: transparent
+        position: absolute
+        transition: all .3s ease-in-out
+        left: -50px
+        top: 8px
+    &:not(:last-child)
+        margin-bottom: 35px
+
+.st-content__text
+    color: $crWhite
+    font-size: 1.1em
+    &:not(:last-child)
+        margin-bottom: 35px
+
+.st-content__text-accent
+    border-bottom: 1px solid $crWhite
+    color: $crMain
+
+#partnersSlider
+    margin: 200px 0 140px
+#sPartners
+    background-color: $crWhite
+
+#sAbout
+    display: flex
+    position: relative
+    background-color: $crAccent
+    padding: 0
+    justify-content: center
+    width: 100%
+    height: auto
+    .st-container
+        top: 0
+        position: absolute
+    .st-title
+        margin-top: 80px
+    .st-content
+        margin: 0
+    
+#sContacts
+    background-color: $crWhite
+
+#sScheme
+    z-index: 5
+    position: relative
+    display: flex
+    justify-content: flex-end
+
+#sCallback
+    background-color: $crMain
+    padding: 80px 0
+
+.st-callback
+    display: flex
+    margin: 40px 0 120px
+    width: 800px
+    margin: 80px auto
+
+.st-forward
+    position: absolute
+    z-index: 2
+
+.st-contacts
+    z-index: 5
+    max-width: 700px
+    font-size: 1.1em
+    font-family: $ftBold
+    position: absolute
+    padding: 60px
+    left: 20%
+    top: 50%
+    transform: translateY(-50%)
+
+.st-contacts__item
+    position: relative
+    &:not(:last-child)
+        margin-bottom: 80px
+
+.st-contacts__item--icon
+    position: absolute
+    left: -100px
+    width: 70px
+    height: 70px
+    top: 50%
+    transform: translateY(-50%)
+
+.st-layout
+    opacity: .2
+    background-color: $crAccent
+    z-index: 3
+
+.st-carousel
+    position: absolute
+
+.st-map-layer
+    width: 100%
+    height: 100%
+    position: absolute
+    background-color: $crAccent
+    top: 0
+    opacity: .5
+    transition: opacity .4s ease
+    &:hover
+        opacity: 0
+        z-index: -2
+
+.st-section-narrow
+    position: relative
+    display: flex
+    flex-direction: column
+    padding: 80px 0
+        
+.map
+    width: 100%
+    height: 100%
+
+.st-partner, .st-company
+    height: 100%
+    display: flex
+    margin: auto
+    img
+        width: auto
+        display: inline-block
+        margin: auto
+        height: auto
+    
+.st-company
+    height: auto
+    margin: 0
+    padding: 150px 0
+    img
+        max-width: 100%
+        z-index: 1
+        position: absolute
+        top: 0
+    .imgDt
+        display: flex
+    .imgMob
+        display: none
+
+    .st-list
+        margin-top: 60px
+
+.st-partner
+    img
+        max-width: 180px
+        max-height: 100px
+
+.st-layer
+	width: 100%
+	height: 100%
+	opacity: .9
+	background-color: $crAccent
+	position: absolute
+	z-index: 2
+	top: 0
+
+.st-modal
+    background-color: $crMain
+    position: fixed
+    left: 0
+    top: 0
+    width: 100vw
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    transition: all .4s ease
+    opacity: 0
+    visibility: hidden
+    z-index: -5
+
+.st-modal.active
+    opacity: 1
+    visibility: visible
+    z-index: 255
+    
+.st-modal 
+    .st-callback
+        flex-direction: column
+        width: 100%
+        max-width: 500px
+        padding: 20px
+        .st-input-accent
+            margin-bottom: 2rem
+
+.st-close
+    cursor: pointer
+    font-family: $ftBold
+    font-size: 4rem
+    font-weight: 800
+    position: absolute
+    left: 80%
+    top: 10%
+    &:hover
+        color: lighten($crAccent, 5%)
+
+.st-content__text-list
+    margin-bottom: 20px
+    color: $crWhite
+    font-size: 1.1em

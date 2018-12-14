@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="utf-8">
+    <base href="/">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="image/logo.png">
+    <title>Искитимский Элеватор</title>
+    <!-- <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"> -->
+    <!--Chrome, Firefox OS and Opera-->
+    <meta name="theme-color" content="#fff">
+    <!--Windows Phone-->
+    <meta name="msapplication-navbutton-color" content="#fff">
+    <!--iOS Safari-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+    <link rel="stylesheet" href="/css/main.min.css">
+</head>
+
+<body class="index">
+        <div class="st-modal">
+            <div class="st-title st-title-accent">
+                <div class="">Оставить заявку</div>
+            </div>
+            <div class="st-close">&#215;</div>
+            <form class="st-callback" method="POST">
+                    
+                <div class="callback-success hidden"><span>Спасибо за заявку!</span></div>
+    
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="IskitimElevator">
+                <input type="hidden" name="admin_email" value="k203oy@mail.ru">
+                <input type="hidden" name="form_subject" value="Заявка">
+                <!-- END Hidden Required Fields -->
+    
+                <input type="text" class="st-input st-input-accent" placeholder="Ваш номер телефона"
+                name="callback-phone" id="callback-modal-phone"
+                >
+                <button class="st-btn st-btn-accent" type="submit">Отправить</button>
+            </form>
+        </div>
+
+    <!-- Navigation menu -->
+    <button class="hamburger hamburger--emphatic" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <div class="st-menu">
+        <a href="/"><img class="st-logo st-menu-logo" src="img/iskel_logo.svg" alt="Искитимский Элеватор"></a>
+        <div class="st-col st-centered">
+            <div class="st-nav">
+                <ul class="st-mobile-nav__list">
+                    <li class="st-mobile-nav__item"><a href="#sAdvantages">Преимущества</a></li>
+                    <li class="st-mobile-nav__item"><a href="#sAbout">О компании</a></li>
+                    <li class="st-mobile-nav__item"><a href="#sContacts">Контакты</a></li>
+                    <li class="st-mobile-nav__item"><a href="#sScheme">Схема проезда</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation menu -->
+    <header class="st-header" id="sHeader">
+        <div class="st-row st-header__row">
+            <a href="/"><img class="st-logo" src="img/iskel_logo.svg" alt="Искитимский Элеватор"></a>
+            <div class="st-col">
+                <div class="st-phone"><a href="tel:89137490276">8 913 749 02 76</a></div>
+                <nav class="st-nav">
+                    <ul class="st-nav__list">
+                        <li class="st-nav__item"><a href="#sAdvantages">Преимущества</a></li>
+                        <li class="st-nav__item"><a href="#sAbout">О компании</a></li>
+                        <li class="st-nav__item"><a href="#sContacts">Контакты</a></li>
+                        <li class="st-nav__item"><a href="#sScheme">Схема проезда</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="st-section" id="sMain">
+        <div class="st-main-title">
+            <h1 class="st-main-title__header">Элеватор <br> на 100,5 тыс. тонн</h1>
+            <span class="st-main-title__footer">единовременного хранения</span>
+        </div>
+        <img class="st-bg-img" src="img/kolosya-min.png" alt="">
+    </section>
+
+    <section class="st-section" id="sAdvantages">
+        <div class="st-container">
+            <div class="st-title st-title-accent">
+                <div class="st-title__text">Преимущества</div>
+            </div>
+
+            <div class="st-row st-content">
+                <div class="st-col st-col-left">
+                    <ul class="st-list" id="advantages">
+                        <li class="st-list__item">Снижение затрат по хранению и перевалке относительно конкурентов за
+                            счет использования современных технологий и минимизации участия человеческого фактора;</li>
+                        <li class="st-list__item">Проведение анализа качества зерна;</li>
+                        <li class="st-list__item">Высокий уровень сохранности зерна без потери его качества
+                            (снижение рисков заражения и поражения зерна вредителями, защита от попадания
+                            влаги,возможность постоянного контроля качества);</li>
+                        <li class="st-list__item">Увеличение скорости выполняемых работ за счет
+                            автоматизированной системы транспортировки, взвешивания и выгрузки зерна;</li>
+                        <li class="st-list__item">Приёмка и отгрузка ж/д до 2 тыс. тон в сутки</li>
+                    </ul>
+                </div>
+                <div class="st-col st-col-right">
+                    <img class="st-bg-img" id="wheatAdvantages" src="img/wheat-min.png" alt="Высокий уровень сохранности зерна без потери качества">
+                    <button class="st-btn st-btn-main" id="callbackBtn">Связаться</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="" id="sAbout">
+
+        <div class="st-slider-container">
+
+            <div class="swiper-container" id="companySlider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide st-company">
+                        <div class="st-row st-content st-centered">
+
+                            <div class="st-list">
+                                <p class="st-content__text">Элеватор рассчитан на хранение следующих видов зерна: 
+                                    <span class="st-content__text-accent">подсолнечник</span>, <span class="st-content__text-accent">зернобобовые</span>, <span class="st-content__text-accent">кукуруза</span>, <span class="st-content__text-accent">пшеница</span>,
+                                    <span class="st-content__text-accent">ячмень</span>,
+                                    <span class="st-content__text-accent">рапс</span>,
+                                    <span class="st-content__text-accent">соя</span>
+                                </p>
+                                <p class="st-content__text">Инфраструктура элеватора подразумевает наличие железнодорожной ветки на территории предприятия, близкое расположение предприятия к транспортным магистралям и достаточному количеству аграрных производителей.
+                                </p>
+                                 <p class="st-content__text">
+                                    Все процессы в элеваторе полностью механизированы и автоматизированы.
+                                </p>
+                            </div>
+        
+                        </div>
+                        <img class="imgDt" src="img/VEGA-min.jpg">
+                        <img class="imgMob" src="img/VEGA-min_mob.jpg">
+
+                        <div class="st-layer"></div>
+                    </div>
+
+                    <div class="swiper-slide st-company">
+                            <div class="st-row st-content st-centered">
+
+                                <div class="st-list">
+            
+                                    <p class="st-content__text">   Высокотехнологичное оборудование элеватора позволит с минимальными потерями производить следующие процессы: первичная очистка зерновой культуры, сушка, вторичная очистка, активное вентилирование, охлаждение зерна, защита зерна от вредителей, изъятие механически поврежденного или мелкого зерна, разделение культур и другие услуги по доводке зерна.
+                                    </p>
+
+                                    <ul class="st-content__text-list">
+                                        <li>Производительность зерносушилки <span class="st-content__text-accent">100 т/час</span></li>
+                                        <li>Вместимость зернохранилища элеватора <span class="st-content__text-accent">100.500 тонн</span> зерновых </li>
+                                        <li>Производительность механизмов очистителей <span class="st-content__text-accent">–200 т/час</span></li>
+                                        <li>Транспортного оборудования <span class="st-content__text-accent">200 т/час</span> </li>
+                                    </ul>
+
+                                </div>
+            
+                            </div>
+                        <img class="imgDt" src="img/ie_photo_2.jpg">
+                        <img class="imgMob" src="img/ie_photo_2_mob.jpg">
+                        <div class="st-layer"></div>
+                    </div>
+
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="st-prev"><a>&#10094;</a></div>
+                <div class="st-next"><a>&#10095;</a></div>
+            </div>
+
+        </div>
+
+        <div class="st-container">
+
+            <div class="st-title st-title-white">
+                <div class="st-title__text">О компании</div>
+            </div>
+
+        </div>
+
+        <button class="st-btn st-btn-main" id="seePhotos">Смотреть фотографии</button>
+
+    </section>
+
+    <section class="st-section-narrow" id="sPartners">
+
+        <div class="st-container">
+
+            <div class="st-title st-title-accent">
+                <div class="st-title__text">С нами работают</div>
+            </div>
+        </div>
+
+        <div class="st-row st-centered">
+            <!-- Slider main container -->
+            <div class="swiper-container" id="partnersSlider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide st-partner">
+                        <img src="img/icons/boscheSystembau.png" alt="">
+                    </div>
+
+                    <div class="swiper-slide st-partner">
+                        <img src="img/icons/buhler.png" alt="">
+                    </div>
+
+                    <div class="swiper-slide st-partner">
+                        <img src="img/icons/SCHULZ.png" alt="">
+                    </div>
+
+                    <div class="swiper-slide st-partner">
+                        <img src="img/icons/petkus.jpg" alt="">
+                    </div>
+
+                    <div class="swiper-slide st-partner">
+                        <img src="img/icons/logoSymaga.png" alt="">
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="st-prev"><a>&#10094;</a></div>
+                <div class="st-next"><a>&#10095;</a></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="sCallback">
+        <div class="st-container">
+            <div class="st-title st-title-accent">
+                <div class="st-title__text">Оставить заявку</div>
+            </div>
+            <form class="st-callback" method="POST">
+                
+                <div class="callback-success hidden"><span>Спасибо за заявку!</span></div>
+
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="IskitimElevator">
+                <input type="hidden" name="admin_email" value="k203oy@mail.ru">
+                <input type="hidden" name="form_subject" value="Заявка">
+                <!-- END Hidden Required Fields -->
+
+                <input type="text" class="st-input st-input-accent" placeholder="Ваш номер телефона"
+                name="callback-phone" id="callback-phone"
+                >
+                <button class="st-btn st-btn-accent" type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="st-section" id="sContacts">
+        <div class="st-container">
+            <div class="st-title st-title-accent">
+                <div class="st-title__text">Контакты</div>
+            </div>
+
+            <div class="st-contacts">
+                <ul class="st-contacts__list">
+                    <li class="st-contacts__item">
+                        <a href="">
+                            <img class="st-contacts__item--icon" src="img/address(2).svg">
+                            633204, Новосибирская область, город Искитим, улица Элеваторная, 5
+                        </a>
+                    </li>
+                    <li class="st-contacts__item">
+                        <a href="">
+                            <img class="st-contacts__item--icon" src="img/phone(2).svg">
+                            8 913 749 02 76
+                        </a>
+                    </li>
+                    <li class="st-contacts__item">
+                        <a href="">
+                            <img class="st-contacts__item--icon" src="img/mail(2).svg">
+                            k203oy@mail.ru
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <img class="st-bg-img" src="img/wheat_Pile-min.png" alt="" id="wheatContacts">
+    </section>
+
+    <section class="" id="sScheme">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa3268e1bd37e6e57a493cf0019f64b0f319d594a9bf441951a7e6b92a57b278b&amp;width=100%25&amp;height=664&amp;lang=ru_RU&amp;scroll=true"></script>
+    </section>
+
+    <footer class="st-footer" id="sFooter">
+        <div class="st-container">
+            
+            <div class="st-row st-footer__row">
+                <div class="st-col">
+                    <div class="st-nav">
+                        <ul class="st-nav__list">
+                            <li class="st-nav__item"><a href="#sAdvantages">Преимущества</a></li>
+                            <li class="st-nav__item"><a href="#sAbout">О компании</a></li>
+                            <li class="st-nav__item"><a href="#sContacts">Контакты</a></li>
+                            <li class="st-nav__item"><a href="#sScheme">Схема проезда</a></li>
+                        </ul>
+                    </div>
+                    <a href="/">
+                        <img class="st-logo" src="img/iskel_logo_light.svg" alt="Искитимский Элеватор">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+        
+    <!-- Scripts includes here -->
+    <script src="/js/scripts.min.js"></script>
+
+</body>
+
+</html>
